@@ -18,7 +18,7 @@ class Cache:
             if cache_item['expiration_time'] is None or cache_item['expiration_time'] > time.time():
                 return cache_item['value']
             else:
-                del self.cache[key]  # Remove item expirado do cache
+                del self.cache[key]
         return None
 
     def remove(self, key):

@@ -36,16 +36,6 @@ finalize = [
   "seja cauteloso ao continuar",
 ]
 
-def get_word_gender(word):
-  word_lowercase = word.lower()
-  sufixos_femininos = ["a", "ão", "m", "n", "gem", "dade"]
-  
-  for sufixo in sufixos_femininos:
-    if word_lowercase.endswith(sufixo):
-      return "a"
-  
-  return ""
-
 def capitalize_words(s):
   return ' '.join(word.capitalize() for word in s.split())
 

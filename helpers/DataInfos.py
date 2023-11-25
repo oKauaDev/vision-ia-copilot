@@ -10,7 +10,6 @@ objetos = {
     'boat': {'name': 'barco', 'gender': ''},
     'traffic light': {'name': 'semáforo', 'gender': ''},
     'fire hydrant': {'name': 'hidrante', 'gender': ''},
-    'unknown1': {'name': 'desconhecido', 'gender': ''},  # ??? 
     'stop sign': {'name': 'placa de pare', 'gender': 'a'},
     'parking meter': {'name': 'parquímetro', 'gender': ''},
     'bench': {'name': 'banco', 'gender': ''},
@@ -24,11 +23,8 @@ objetos = {
     'bear': {'name': 'urso', 'gender': ''},
     'zebra': {'name': 'zebra', 'gender': 'a'},
     'giraffe': {'name': 'girafa', 'gender': 'a'},
-    'unknown2': {'name': 'desconhecido', 'gender': ''},  # ??? 
     'backpack': {'name': 'mochila', 'gender': 'a'},
     'umbrella': {'name': 'guarda-chuva', 'gender': ''},
-    'unknown3': {'name': 'desconhecido', 'gender': ''},  # ??? 
-    'unknown4': {'name': 'desconhecido', 'gender': ''},  # ??? 
     'handbag': {'name': 'bolsa', 'gender': 'a'},
     'tie': {'name': 'gravata', 'gender': 'a'},
     'suitcase': {'name': 'mala', 'gender': 'a'},
@@ -43,7 +39,6 @@ objetos = {
     'surfboard': {'name': 'prancha de surfe', 'gender': 'a'},
     'tennis racket': {'name': 'raquete de tênis', 'gender': 'a'},
     'bottle': {'name': 'garrafa', 'gender': 'a'},
-    'unknown5': {'name': 'desconhecido', 'gender': ''},  # ??? 
     'wine glass': {'name': 'copo de vinho', 'gender': ''},
     'cup': {'name': 'xícara', 'gender': 'a'},
     'fork': {'name': 'garfo', 'gender': ''},
@@ -64,12 +59,8 @@ objetos = {
     'couch': {'name': 'sofá', 'gender': ''},
     'potted plant': {'name': 'planta em vaso', 'gender': 'a'},
     'bed': {'name': 'cama', 'gender': 'a'},
-    'unknown6': {'name': 'desconhecido', 'gender': ''},  # ??? 
     'dining table': {'name': 'mesa de jantar', 'gender': 'a'},
-    'unknown7': {'name': 'desconhecido', 'gender': ''},  # ??? 
-    'unknown8': {'name': 'desconhecido', 'gender': ''},  # ??? 
     'toilet': {'name': 'vaso sanitário', 'gender': ''},
-    'unknown9': {'name': 'desconhecido', 'gender': ''},  # ??? 
     'tv': {'name': 'televisão', 'gender': 'a'},
     'laptop': {'name': 'laptop', 'gender': ''},
     'mouse': {'name': 'mouse', 'gender': ''},

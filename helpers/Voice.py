@@ -13,6 +13,7 @@ class Voice:
     self.engine.runAndWait()
   
   def on_utterance_finished(self, name, completed):
-    if completed and hasattr(self, 'callback') and callable(self.callback):
-      self.callback()
-      del self.callback
+    if self.callback is not None:
+      if completed and hasattr(self, 'callback') and callable(self.callback):
+        self.callback()
+        del self.callback

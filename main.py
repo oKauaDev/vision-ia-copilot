@@ -67,7 +67,7 @@ cap.set(cv2.CAP_PROP_FRAME_WIDTH, 1280)
 cap.set(cv2.CAP_PROP_FRAME_HEIGHT, 720)
 cap.set(cv2.CAP_PROP_FPS, 60)
 
-def executeObject(image, detections, camWidth):
+def executeObject(image, detections, camWidth, camHeight):
   objects = []
   
   for detection in detections:
@@ -82,8 +82,10 @@ def executeObject(image, detections, camWidth):
     for category in classnames:
       classname = category.category_name
       real_object = get_object_infos(classname)
+      gender = ""
       if real_object:
         classname = real_object["name"]
+        gender = real_object["gender"]
       
       window.drawInObject(image, x, y, width, height, classname)
       if cache.get(classname) is None:
@@ -94,19 +96,17 @@ def executeObject(image, detections, camWidth):
           else:
             cache.set("NEXT_{}".format(classname.upper()), next_cache + 1, 6)
         else:
-          direction = calcDirection(camWidth, x, width)
-          objects.append((classname, direction, real_object["gender"]))
+          direction = calcDirection(camWidth, camHeight, x, y, width, height)
+          objects.append((classname, direction, gender))
           cache.set(classname, True, 15)
   
   if objects:
-    def onEnd():
-      print("Fala acabou")
-    
     speeker = humanize(objects)
-    voice.speak(speeker, onEnd)
+    voice.speak(speeker)
 
 
 print("Vision Copilot iniciado")
+voice.speak("Vision Copilot iniciado.")
 while cap.isOpened:
     success, image = cap.read()
     if success:
@@ -118,7 +118,7 @@ while cap.isOpened:
       detection_result = detector.detect(mp_image)
       
       if detection_result.detections:
-        executeObject(image, detection_result.detections, width)
+        executeObject(image, detection_result.detections, width, height)
 
       image = cv2.cvtColor(image, cv2.COLOR_BGR2RGB)
       image.flags.writeable = True

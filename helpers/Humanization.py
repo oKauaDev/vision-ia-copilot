@@ -15,12 +15,12 @@ initialize = [
 ]
 
 quite = [
-  "um%s %object posicionado à sua %cord",
-  "um%s %object localizado à sua %cord",
-  "à sua %cord, identifiquei um%s %object",
-  "à sua %cord, notei um%s %object",
-  "à sua %cord, percebi um%s %object",
-  "na sua %cord tem um%s %object",
+  "um%s %object posicionado %cord",
+  "um%s %object localizado %cord",
+  "%cord, identifiquei um%s %object",
+  "%cord, notei um%s %object",
+  "%cord, percebi um%s %object",
+  "%cord tem um%s %object",
 ]
 
 finalize = [

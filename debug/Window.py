@@ -14,6 +14,6 @@ class Window:
     cv2.rectangle(image, (x, y), (x + width, y + height), (0, 255, 0), 2)
     cv2.putText(image, classname, (x, y - 10), cv2.FONT_HERSHEY_SIMPLEX, 0.5, (0, 255, 0), 2)
   
-  def destroy():
+  def destroy(x):
     cv2.destroyAllWindows()
     

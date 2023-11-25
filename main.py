@@ -1,3 +1,29 @@
+print("Iniciando carregamento...")
+
+from tqdm import tqdm
+import importlib
+import os
+os.environ['TF_CPP_MIN_LOG_LEVEL'] = '1'
+
+# Módulos a serem importados
+modules_to_import = [
+    'mediapipe',
+    'mediapipe.tasks.python',
+    'mediapipe.tasks.python.vision',
+    'numpy',
+    'keyboard',
+    'cv2',
+    'utils.Cache',
+    'utils.Distance',
+    'helpers.Voice',
+    'helpers.Humanization',
+    'helpers.DataInfos',
+    'debug.Window'
+]
+
+for module_name in tqdm(modules_to_import, desc="Carregando código..."):
+    importlib.import_module(module_name)
+
 import numpy as np
 import keyboard
 import mediapipe as mp
@@ -11,17 +37,35 @@ from helpers.Humanization import humanize
 from helpers.DataInfos import get_object_infos
 from debug.Window import Window
 
+print("""
+ #     #                              #####                                      
+ #     # #  ####  #  ####  #    #    #     #  ####  #####  # #       ####  ##### 
+ #     # # #      # #    # ##   #    #       #    # #    # # #      #    #   #   
+ #     # #  ####  # #    # # #  #    #       #    # #    # # #      #    #   #   
+  #   #  #      # # #    # #  # #    #       #    # #####  # #      #    #   #   
+   # #   # #    # # #    # #   ##    #     # #    # #      # #      #    #   #   
+    #    #  ####  #  ####  #    #     #####   ####  #      # ######  ####    #   
+                                                                                 
+      """)
+
 MODEL_PATH = 'models/efficientdet.tflite'
 
+print("Carregando modelo...")
 base_options = python.BaseOptions(model_asset_path=MODEL_PATH)
 options = vision.ObjectDetectorOptions(base_options=base_options,
                                        score_threshold=0.6)
 detector = vision.ObjectDetector.create_from_options(options)
 
+print("Criando classes")
 cap = cv2.VideoCapture(0)
 voice = Voice()
 cache = Cache()
 window = Window("Vision Copilot")
+
+print("Definindo configurações...")
+cap.set(cv2.CAP_PROP_FRAME_WIDTH, 1280)
+cap.set(cv2.CAP_PROP_FRAME_HEIGHT, 720)
+cap.set(cv2.CAP_PROP_FPS, 60)
 
 def executeObject(image, detections, camWidth):
   objects = []
@@ -62,6 +106,7 @@ def executeObject(image, detections, camWidth):
     voice.speak(speeker, onEnd)
 
 
+print("Vision Copilot iniciado")
 while cap.isOpened:
     success, image = cap.read()
     if success:
@@ -84,4 +129,3 @@ while cap.isOpened:
 
 cap.release()
 window.destroy()
-    

@@ -129,3 +129,4 @@ while cap.isOpened:
 
 cap.release()
 window.destroy()
+voice.speak("Vision Copilot desligado.")

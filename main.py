@@ -6,6 +6,7 @@ import os
 os.environ['TF_CPP_MIN_LOG_LEVEL'] = '1'
 
 modules_to_import = [
+  'sys',
   'mediapipe',
   'mediapipe.tasks.python',
   'mediapipe.tasks.python.vision',
@@ -28,6 +29,9 @@ for module_name in tqdm(modules_to_import, desc="Carregando código..."):
 import argparse
 import numpy as np
 import keyboard
+from mediapipe.python._framework_bindings import resource_util
+import sys
+sys.path.append("/home/pi/.local/lib/python3.9/site-packages")
 import mediapipe as mp
 from mediapipe.tasks import python
 from mediapipe.tasks.python import vision

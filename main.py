@@ -40,8 +40,6 @@ from helpers.DataInfos import get_object_infos
 from debug.Window import Window
 
 def main(args):
-  cameraEnable = args.camera
-  
   print("""
   #     #                              #####                                      
   #     # #  ####  #  ####  #    #    #     #  ####  #####  # #       ####  ##### 
@@ -70,12 +68,10 @@ def main(args):
   detector = vision.ObjectDetector.create_from_options(options)
 
   print("Criando classes")
-  cap = cv2.VideoCapture(0)
+  cap = cv2.VideoCapture(args.camera)
   voice = Voice()
   cache = Cache()
-  window = None
-  if cameraEnable:
-    window = Window("Vision Copilot")
+  window = Window("Vision Copilot")
 
   print("Definindo configurações da câmera...")
   cap.set(cv2.CAP_PROP_FRAME_WIDTH, args.width)
@@ -103,8 +99,7 @@ def main(args):
           classname = real_object["name"]
           gender = real_object["gender"]
         
-        if window is not None:
-          window.drawInObject(image, x, y, width, height, classname)
+        window.drawInObject(image, x, y, width, height, classname)
         if cache.get("{}{}".format(classname, directionX)) is None:
           next_cache = cache.get("NEXT_{}".format(classname.upper()))
           if next_cache is None or next_cache <= 3:
@@ -139,20 +134,18 @@ def main(args):
 
         image = cv2.cvtColor(image, cv2.COLOR_BGR2RGB)
         image.flags.writeable = True
-        if window is not None:
-          window.shot(image)
+        window.shot(image)
       
       if keyboard.is_pressed('q'):
         break
 
   cap.release()
-  if window is not None:
-    window.destroy()
+  window.destroy()
   voice.speak("Vision Copilot desligado.")
 
 if __name__ == "__main__":
   parser = argparse.ArgumentParser(description='Vision Copilot - Sistema de Detecção de Objetos.')
-  parser.add_argument('-camera', action='store_true', help='Ativar a câmera')
+  parser.add_argument('-camera', type=int, help='Ativar a câmera',default=0)
   parser.add_argument('-fps', type=int, help='Pegar o fps', default=60)
   parser.add_argument('-width', type=int, help='Width da câmera', default=1280)
   parser.add_argument('-height', type=int, help='Height da câmera', default=720)

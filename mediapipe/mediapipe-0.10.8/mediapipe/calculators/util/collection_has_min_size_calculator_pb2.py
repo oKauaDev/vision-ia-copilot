@@ -4,9 +4,8 @@
 """Generated protocol buffer code."""
 from google.protobuf import descriptor as _descriptor
 from google.protobuf import descriptor_pool as _descriptor_pool
-from google.protobuf import message as _message
-from google.protobuf import reflection as _reflection
 from google.protobuf import symbol_database as _symbol_database
+from google.protobuf.internal import builder as _builder
 # @@protoc_insertion_point(imports)
 
 _sym_db = _symbol_database.Default()
@@ -21,20 +20,13 @@ except AttributeError:
 
 DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\nCmediapipe/calculators/util/collection_has_min_size_calculator.proto\x12\tmediapipe\x1a$mediapipe/framework/calculator.proto\"\x9c\x01\n%CollectionHasMinSizeCalculatorOptions\x12\x13\n\x08min_size\x18\x01 \x01(\x05:\x01\x30\x32^\n\x03\x65xt\x12\x1c.mediapipe.CalculatorOptions\x18\xd0\xb1\xd8{ \x01(\x0b\x32\x30.mediapipe.CollectionHasMinSizeCalculatorOptions')
 
-
-
-_COLLECTIONHASMINSIZECALCULATOROPTIONS = DESCRIPTOR.message_types_by_name['CollectionHasMinSizeCalculatorOptions']
-CollectionHasMinSizeCalculatorOptions = _reflection.GeneratedProtocolMessageType('CollectionHasMinSizeCalculatorOptions', (_message.Message,), {
-  'DESCRIPTOR' : _COLLECTIONHASMINSIZECALCULATOROPTIONS,
-  '__module__' : 'mediapipe.calculators.util.collection_has_min_size_calculator_pb2'
-  # @@protoc_insertion_point(class_scope:mediapipe.CollectionHasMinSizeCalculatorOptions)
-  })
-_sym_db.RegisterMessage(CollectionHasMinSizeCalculatorOptions)
-
+_globals = globals()
+_builder.BuildMessageAndEnumDescriptors(DESCRIPTOR, _globals)
+_builder.BuildTopDescriptorsAndMessages(DESCRIPTOR, 'mediapipe.calculators.util.collection_has_min_size_calculator_pb2', _globals)
 if _descriptor._USE_C_DESCRIPTORS == False:
   mediapipe_dot_framework_dot_calculator__options__pb2.CalculatorOptions.RegisterExtension(_COLLECTIONHASMINSIZECALCULATOROPTIONS.extensions_by_name['ext'])
 
   DESCRIPTOR._options = None
-  _COLLECTIONHASMINSIZECALCULATOROPTIONS._serialized_start=121
-  _COLLECTIONHASMINSIZECALCULATOROPTIONS._serialized_end=277
+  _globals['_COLLECTIONHASMINSIZECALCULATOROPTIONS']._serialized_start=121
+  _globals['_COLLECTIONHASMINSIZECALCULATOROPTIONS']._serialized_end=277
 # @@protoc_insertion_point(module_scope)

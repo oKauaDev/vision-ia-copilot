@@ -4,9 +4,8 @@
 """Generated protocol buffer code."""
 from google.protobuf import descriptor as _descriptor
 from google.protobuf import descriptor_pool as _descriptor_pool
-from google.protobuf import message as _message
-from google.protobuf import reflection as _reflection
 from google.protobuf import symbol_database as _symbol_database
+from google.protobuf.internal import builder as _builder
 # @@protoc_insertion_point(imports)
 
 _sym_db = _symbol_database.Default()
@@ -18,20 +17,13 @@ from mediapipe.tasks.cc.vision.face_geometry.proto import mesh_3d_pb2 as mediapi
 
 DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\nAmediapipe/tasks/cc/vision/face_geometry/proto/face_geometry.proto\x12*mediapipe.tasks.vision.face_geometry.proto\x1a-mediapipe/framework/formats/matrix_data.proto\x1a;mediapipe/tasks/cc/vision/face_geometry/proto/mesh_3d.proto\"\x86\x01\n\x0c\x46\x61\x63\x65Geometry\x12@\n\x04mesh\x18\x01 \x01(\x0b\x32\x32.mediapipe.tasks.vision.face_geometry.proto.Mesh3d\x12\x34\n\x15pose_transform_matrix\x18\x02 \x01(\x0b\x32\x15.mediapipe.MatrixDataBI\n4com.google.mediapipe.tasks.vision.facegeometry.protoB\x11\x46\x61\x63\x65GeometryProto')
 
-
-
-_FACEGEOMETRY = DESCRIPTOR.message_types_by_name['FaceGeometry']
-FaceGeometry = _reflection.GeneratedProtocolMessageType('FaceGeometry', (_message.Message,), {
-  'DESCRIPTOR' : _FACEGEOMETRY,
-  '__module__' : 'mediapipe.tasks.cc.vision.face_geometry.proto.face_geometry_pb2'
-  # @@protoc_insertion_point(class_scope:mediapipe.tasks.vision.face_geometry.proto.FaceGeometry)
-  })
-_sym_db.RegisterMessage(FaceGeometry)
-
+_globals = globals()
+_builder.BuildMessageAndEnumDescriptors(DESCRIPTOR, _globals)
+_builder.BuildTopDescriptorsAndMessages(DESCRIPTOR, 'mediapipe.tasks.cc.vision.face_geometry.proto.face_geometry_pb2', _globals)
 if _descriptor._USE_C_DESCRIPTORS == False:
 
   DESCRIPTOR._options = None
   DESCRIPTOR._serialized_options = b'\n4com.google.mediapipe.tasks.vision.facegeometry.protoB\021FaceGeometryProto'
-  _FACEGEOMETRY._serialized_start=222
-  _FACEGEOMETRY._serialized_end=356
+  _globals['_FACEGEOMETRY']._serialized_start=222
+  _globals['_FACEGEOMETRY']._serialized_end=356
 # @@protoc_insertion_point(module_scope)

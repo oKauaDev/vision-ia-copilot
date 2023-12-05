@@ -4,9 +4,8 @@
 """Generated protocol buffer code."""
 from google.protobuf import descriptor as _descriptor
 from google.protobuf import descriptor_pool as _descriptor_pool
-from google.protobuf import message as _message
-from google.protobuf import reflection as _reflection
 from google.protobuf import symbol_database as _symbol_database
+from google.protobuf.internal import builder as _builder
 # @@protoc_insertion_point(imports)
 
 _sym_db = _symbol_database.Default()
@@ -22,20 +21,13 @@ from mediapipe.tasks.cc.components.processors.proto import embedder_options_pb2 
 
 DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\nPmediapipe/tasks/cc/components/calculators/tensors_to_embeddings_calculator.proto\x12\tmediapipe\x1a$mediapipe/framework/calculator.proto\x1a\x45mediapipe/tasks/cc/components/processors/proto/embedder_options.proto\"\x8e\x02\n$TensorsToEmbeddingsCalculatorOptions\x12V\n\x10\x65mbedder_options\x18\x01 \x01(\x0b\x32<.mediapipe.tasks.components.processors.proto.EmbedderOptions\x12\x12\n\nhead_names\x18\x02 \x03(\t\x12\x1a\n\x12ignored_head_names\x18\x03 \x03(\t2^\n\x03\x65xt\x12\x1c.mediapipe.CalculatorOptions\x18\xd6\x98\xb1\xe2\x01 \x01(\x0b\x32/.mediapipe.TensorsToEmbeddingsCalculatorOptions')
 
-
-
-_TENSORSTOEMBEDDINGSCALCULATOROPTIONS = DESCRIPTOR.message_types_by_name['TensorsToEmbeddingsCalculatorOptions']
-TensorsToEmbeddingsCalculatorOptions = _reflection.GeneratedProtocolMessageType('TensorsToEmbeddingsCalculatorOptions', (_message.Message,), {
-  'DESCRIPTOR' : _TENSORSTOEMBEDDINGSCALCULATOROPTIONS,
-  '__module__' : 'mediapipe.tasks.cc.components.calculators.tensors_to_embeddings_calculator_pb2'
-  # @@protoc_insertion_point(class_scope:mediapipe.TensorsToEmbeddingsCalculatorOptions)
-  })
-_sym_db.RegisterMessage(TensorsToEmbeddingsCalculatorOptions)
-
+_globals = globals()
+_builder.BuildMessageAndEnumDescriptors(DESCRIPTOR, _globals)
+_builder.BuildTopDescriptorsAndMessages(DESCRIPTOR, 'mediapipe.tasks.cc.components.calculators.tensors_to_embeddings_calculator_pb2', _globals)
 if _descriptor._USE_C_DESCRIPTORS == False:
   mediapipe_dot_framework_dot_calculator__options__pb2.CalculatorOptions.RegisterExtension(_TENSORSTOEMBEDDINGSCALCULATOROPTIONS.extensions_by_name['ext'])
 
   DESCRIPTOR._options = None
-  _TENSORSTOEMBEDDINGSCALCULATOROPTIONS._serialized_start=205
-  _TENSORSTOEMBEDDINGSCALCULATOROPTIONS._serialized_end=475
+  _globals['_TENSORSTOEMBEDDINGSCALCULATOROPTIONS']._serialized_start=205
+  _globals['_TENSORSTOEMBEDDINGSCALCULATOROPTIONS']._serialized_end=475
 # @@protoc_insertion_point(module_scope)

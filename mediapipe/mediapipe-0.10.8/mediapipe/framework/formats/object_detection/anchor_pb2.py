@@ -4,9 +4,8 @@
 """Generated protocol buffer code."""
 from google.protobuf import descriptor as _descriptor
 from google.protobuf import descriptor_pool as _descriptor_pool
-from google.protobuf import message as _message
-from google.protobuf import reflection as _reflection
 from google.protobuf import symbol_database as _symbol_database
+from google.protobuf.internal import builder as _builder
 # @@protoc_insertion_point(imports)
 
 _sym_db = _symbol_database.Default()
@@ -16,19 +15,12 @@ _sym_db = _symbol_database.Default()
 
 DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n9mediapipe/framework/formats/object_detection/anchor.proto\x12\tmediapipe\"B\n\x06\x41nchor\x12\x10\n\x08x_center\x18\x01 \x02(\x02\x12\x10\n\x08y_center\x18\x02 \x02(\x02\x12\t\n\x01h\x18\x03 \x02(\x02\x12\t\n\x01w\x18\x04 \x02(\x02')
 
-
-
-_ANCHOR = DESCRIPTOR.message_types_by_name['Anchor']
-Anchor = _reflection.GeneratedProtocolMessageType('Anchor', (_message.Message,), {
-  'DESCRIPTOR' : _ANCHOR,
-  '__module__' : 'mediapipe.framework.formats.object_detection.anchor_pb2'
-  # @@protoc_insertion_point(class_scope:mediapipe.Anchor)
-  })
-_sym_db.RegisterMessage(Anchor)
-
+_globals = globals()
+_builder.BuildMessageAndEnumDescriptors(DESCRIPTOR, _globals)
+_builder.BuildTopDescriptorsAndMessages(DESCRIPTOR, 'mediapipe.framework.formats.object_detection.anchor_pb2', _globals)
 if _descriptor._USE_C_DESCRIPTORS == False:
 
   DESCRIPTOR._options = None
-  _ANCHOR._serialized_start=72
-  _ANCHOR._serialized_end=138
+  _globals['_ANCHOR']._serialized_start=72
+  _globals['_ANCHOR']._serialized_end=138
 # @@protoc_insertion_point(module_scope)

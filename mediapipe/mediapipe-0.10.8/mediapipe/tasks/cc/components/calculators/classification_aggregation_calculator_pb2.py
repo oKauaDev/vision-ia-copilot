@@ -4,9 +4,8 @@
 """Generated protocol buffer code."""
 from google.protobuf import descriptor as _descriptor
 from google.protobuf import descriptor_pool as _descriptor_pool
-from google.protobuf import message as _message
-from google.protobuf import reflection as _reflection
 from google.protobuf import symbol_database as _symbol_database
+from google.protobuf.internal import builder as _builder
 # @@protoc_insertion_point(imports)
 
 _sym_db = _symbol_database.Default()
@@ -21,20 +20,13 @@ except AttributeError:
 
 DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\nUmediapipe/tasks/cc/components/calculators/classification_aggregation_calculator.proto\x12\tmediapipe\x1a$mediapipe/framework/calculator.proto\"\xa6\x01\n*ClassificationAggregationCalculatorOptions\x12\x12\n\nhead_names\x18\x01 \x03(\t2d\n\x03\x65xt\x12\x1c.mediapipe.CalculatorOptions\x18\xf8\x8e\xf5\xd5\x01 \x01(\x0b\x32\x35.mediapipe.ClassificationAggregationCalculatorOptions')
 
-
-
-_CLASSIFICATIONAGGREGATIONCALCULATOROPTIONS = DESCRIPTOR.message_types_by_name['ClassificationAggregationCalculatorOptions']
-ClassificationAggregationCalculatorOptions = _reflection.GeneratedProtocolMessageType('ClassificationAggregationCalculatorOptions', (_message.Message,), {
-  'DESCRIPTOR' : _CLASSIFICATIONAGGREGATIONCALCULATOROPTIONS,
-  '__module__' : 'mediapipe.tasks.cc.components.calculators.classification_aggregation_calculator_pb2'
-  # @@protoc_insertion_point(class_scope:mediapipe.ClassificationAggregationCalculatorOptions)
-  })
-_sym_db.RegisterMessage(ClassificationAggregationCalculatorOptions)
-
+_globals = globals()
+_builder.BuildMessageAndEnumDescriptors(DESCRIPTOR, _globals)
+_builder.BuildTopDescriptorsAndMessages(DESCRIPTOR, 'mediapipe.tasks.cc.components.calculators.classification_aggregation_calculator_pb2', _globals)
 if _descriptor._USE_C_DESCRIPTORS == False:
   mediapipe_dot_framework_dot_calculator__options__pb2.CalculatorOptions.RegisterExtension(_CLASSIFICATIONAGGREGATIONCALCULATOROPTIONS.extensions_by_name['ext'])
 
   DESCRIPTOR._options = None
-  _CLASSIFICATIONAGGREGATIONCALCULATOROPTIONS._serialized_start=139
-  _CLASSIFICATIONAGGREGATIONCALCULATOROPTIONS._serialized_end=305
+  _globals['_CLASSIFICATIONAGGREGATIONCALCULATOROPTIONS']._serialized_start=139
+  _globals['_CLASSIFICATIONAGGREGATIONCALCULATOROPTIONS']._serialized_end=305
 # @@protoc_insertion_point(module_scope)

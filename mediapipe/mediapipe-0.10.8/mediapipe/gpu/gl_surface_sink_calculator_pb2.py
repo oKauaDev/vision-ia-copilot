@@ -4,9 +4,8 @@
 """Generated protocol buffer code."""
 from google.protobuf import descriptor as _descriptor
 from google.protobuf import descriptor_pool as _descriptor_pool
-from google.protobuf import message as _message
-from google.protobuf import reflection as _reflection
 from google.protobuf import symbol_database as _symbol_database
+from google.protobuf.internal import builder as _builder
 # @@protoc_insertion_point(imports)
 
 _sym_db = _symbol_database.Default()
@@ -22,20 +21,13 @@ from mediapipe.gpu import scale_mode_pb2 as mediapipe_dot_gpu_dot_scale__mode__p
 
 DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n.mediapipe/gpu/gl_surface_sink_calculator.proto\x12\tmediapipe\x1a$mediapipe/framework/calculator.proto\x1a\x1emediapipe/gpu/scale_mode.proto\"\xae\x01\n\x1eGlSurfaceSinkCalculatorOptions\x12\x33\n\x10\x66rame_scale_mode\x18\x01 \x01(\x0e\x32\x19.mediapipe.ScaleMode.Mode2W\n\x03\x65xt\x12\x1c.mediapipe.CalculatorOptions\x18\x8a\xfb\x83t \x01(\x0b\x32).mediapipe.GlSurfaceSinkCalculatorOptions')
 
-
-
-_GLSURFACESINKCALCULATOROPTIONS = DESCRIPTOR.message_types_by_name['GlSurfaceSinkCalculatorOptions']
-GlSurfaceSinkCalculatorOptions = _reflection.GeneratedProtocolMessageType('GlSurfaceSinkCalculatorOptions', (_message.Message,), {
-  'DESCRIPTOR' : _GLSURFACESINKCALCULATOROPTIONS,
-  '__module__' : 'mediapipe.gpu.gl_surface_sink_calculator_pb2'
-  # @@protoc_insertion_point(class_scope:mediapipe.GlSurfaceSinkCalculatorOptions)
-  })
-_sym_db.RegisterMessage(GlSurfaceSinkCalculatorOptions)
-
+_globals = globals()
+_builder.BuildMessageAndEnumDescriptors(DESCRIPTOR, _globals)
+_builder.BuildTopDescriptorsAndMessages(DESCRIPTOR, 'mediapipe.gpu.gl_surface_sink_calculator_pb2', _globals)
 if _descriptor._USE_C_DESCRIPTORS == False:
   mediapipe_dot_framework_dot_calculator__options__pb2.CalculatorOptions.RegisterExtension(_GLSURFACESINKCALCULATOROPTIONS.extensions_by_name['ext'])
 
   DESCRIPTOR._options = None
-  _GLSURFACESINKCALCULATOROPTIONS._serialized_start=132
-  _GLSURFACESINKCALCULATOROPTIONS._serialized_end=306
+  _globals['_GLSURFACESINKCALCULATOROPTIONS']._serialized_start=132
+  _globals['_GLSURFACESINKCALCULATOROPTIONS']._serialized_end=306
 # @@protoc_insertion_point(module_scope)

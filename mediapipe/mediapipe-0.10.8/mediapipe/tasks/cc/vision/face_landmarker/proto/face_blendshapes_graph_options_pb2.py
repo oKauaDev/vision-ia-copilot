@@ -4,9 +4,8 @@
 """Generated protocol buffer code."""
 from google.protobuf import descriptor as _descriptor
 from google.protobuf import descriptor_pool as _descriptor_pool
-from google.protobuf import message as _message
-from google.protobuf import reflection as _reflection
 from google.protobuf import symbol_database as _symbol_database
+from google.protobuf.internal import builder as _builder
 # @@protoc_insertion_point(imports)
 
 _sym_db = _symbol_database.Default()
@@ -23,21 +22,14 @@ from mediapipe.tasks.cc.core.proto import base_options_pb2 as mediapipe_dot_task
 
 DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\nTmediapipe/tasks/cc/vision/face_landmarker/proto/face_blendshapes_graph_options.proto\x12,mediapipe.tasks.vision.face_landmarker.proto\x1a$mediapipe/framework/calculator.proto\x1a,mediapipe/framework/calculator_options.proto\x1a\x30mediapipe/tasks/cc/core/proto/base_options.proto\"\xd6\x01\n\x1b\x46\x61\x63\x65\x42lendshapesGraphOptions\x12=\n\x0c\x62\x61se_options\x18\x01 \x01(\x0b\x32\'.mediapipe.tasks.core.proto.BaseOptions2x\n\x03\x65xt\x12\x1c.mediapipe.CalculatorOptions\x18\x88\xe4\xd9\xf2\x01 \x01(\x0b\x32I.mediapipe.tasks.vision.face_landmarker.proto.FaceBlendshapesGraphOptionsBZ\n6com.google.mediapipe.tasks.vision.facelandmarker.protoB FaceBlendshapesGraphOptionsProto')
 
-
-
-_FACEBLENDSHAPESGRAPHOPTIONS = DESCRIPTOR.message_types_by_name['FaceBlendshapesGraphOptions']
-FaceBlendshapesGraphOptions = _reflection.GeneratedProtocolMessageType('FaceBlendshapesGraphOptions', (_message.Message,), {
-  'DESCRIPTOR' : _FACEBLENDSHAPESGRAPHOPTIONS,
-  '__module__' : 'mediapipe.tasks.cc.vision.face_landmarker.proto.face_blendshapes_graph_options_pb2'
-  # @@protoc_insertion_point(class_scope:mediapipe.tasks.vision.face_landmarker.proto.FaceBlendshapesGraphOptions)
-  })
-_sym_db.RegisterMessage(FaceBlendshapesGraphOptions)
-
+_globals = globals()
+_builder.BuildMessageAndEnumDescriptors(DESCRIPTOR, _globals)
+_builder.BuildTopDescriptorsAndMessages(DESCRIPTOR, 'mediapipe.tasks.cc.vision.face_landmarker.proto.face_blendshapes_graph_options_pb2', _globals)
 if _descriptor._USE_C_DESCRIPTORS == False:
   mediapipe_dot_framework_dot_calculator__options__pb2.CalculatorOptions.RegisterExtension(_FACEBLENDSHAPESGRAPHOPTIONS.extensions_by_name['ext'])
 
   DESCRIPTOR._options = None
   DESCRIPTOR._serialized_options = b'\n6com.google.mediapipe.tasks.vision.facelandmarker.protoB FaceBlendshapesGraphOptionsProto'
-  _FACEBLENDSHAPESGRAPHOPTIONS._serialized_start=269
-  _FACEBLENDSHAPESGRAPHOPTIONS._serialized_end=483
+  _globals['_FACEBLENDSHAPESGRAPHOPTIONS']._serialized_start=269
+  _globals['_FACEBLENDSHAPESGRAPHOPTIONS']._serialized_end=483
 # @@protoc_insertion_point(module_scope)

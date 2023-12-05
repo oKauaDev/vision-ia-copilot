@@ -4,9 +4,8 @@
 """Generated protocol buffer code."""
 from google.protobuf import descriptor as _descriptor
 from google.protobuf import descriptor_pool as _descriptor_pool
-from google.protobuf import message as _message
-from google.protobuf import reflection as _reflection
 from google.protobuf import symbol_database as _symbol_database
+from google.protobuf.internal import builder as _builder
 # @@protoc_insertion_point(imports)
 
 _sym_db = _symbol_database.Default()
@@ -21,20 +20,13 @@ except AttributeError:
 
 DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\nQmediapipe/modules/objectron/calculators/frame_annotation_to_rect_calculator.proto\x12\tmediapipe\x1a$mediapipe/framework/calculator.proto\"\xbf\x01\n&FrameAnnotationToRectCalculatorOptions\x12\x19\n\roff_threshold\x18\x01 \x01(\x02:\x02\x34\x30\x12\x18\n\x0con_threshold\x18\x02 \x01(\x02:\x02\x34\x31\x32`\n\x03\x65xt\x12\x1c.mediapipe.CalculatorOptions\x18\x9b\x93\x9d\xa1\x01 \x01(\x0b\x32\x31.mediapipe.FrameAnnotationToRectCalculatorOptions')
 
-
-
-_FRAMEANNOTATIONTORECTCALCULATOROPTIONS = DESCRIPTOR.message_types_by_name['FrameAnnotationToRectCalculatorOptions']
-FrameAnnotationToRectCalculatorOptions = _reflection.GeneratedProtocolMessageType('FrameAnnotationToRectCalculatorOptions', (_message.Message,), {
-  'DESCRIPTOR' : _FRAMEANNOTATIONTORECTCALCULATOROPTIONS,
-  '__module__' : 'mediapipe.modules.objectron.calculators.frame_annotation_to_rect_calculator_pb2'
-  # @@protoc_insertion_point(class_scope:mediapipe.FrameAnnotationToRectCalculatorOptions)
-  })
-_sym_db.RegisterMessage(FrameAnnotationToRectCalculatorOptions)
-
+_globals = globals()
+_builder.BuildMessageAndEnumDescriptors(DESCRIPTOR, _globals)
+_builder.BuildTopDescriptorsAndMessages(DESCRIPTOR, 'mediapipe.modules.objectron.calculators.frame_annotation_to_rect_calculator_pb2', _globals)
 if _descriptor._USE_C_DESCRIPTORS == False:
   mediapipe_dot_framework_dot_calculator__options__pb2.CalculatorOptions.RegisterExtension(_FRAMEANNOTATIONTORECTCALCULATOROPTIONS.extensions_by_name['ext'])
 
   DESCRIPTOR._options = None
-  _FRAMEANNOTATIONTORECTCALCULATOROPTIONS._serialized_start=135
-  _FRAMEANNOTATIONTORECTCALCULATOROPTIONS._serialized_end=326
+  _globals['_FRAMEANNOTATIONTORECTCALCULATOROPTIONS']._serialized_start=135
+  _globals['_FRAMEANNOTATIONTORECTCALCULATOROPTIONS']._serialized_end=326
 # @@protoc_insertion_point(module_scope)

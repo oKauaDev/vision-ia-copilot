@@ -4,9 +4,8 @@
 """Generated protocol buffer code."""
 from google.protobuf import descriptor as _descriptor
 from google.protobuf import descriptor_pool as _descriptor_pool
-from google.protobuf import message as _message
-from google.protobuf import reflection as _reflection
 from google.protobuf import symbol_database as _symbol_database
+from google.protobuf.internal import builder as _builder
 # @@protoc_insertion_point(imports)
 
 _sym_db = _symbol_database.Default()
@@ -21,20 +20,13 @@ except AttributeError:
 
 DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\nCmediapipe/calculators/image/segmentation_smoothing_calculator.proto\x12\tmediapipe\x1a$mediapipe/framework/calculator.proto\"\xb2\x01\n&SegmentationSmoothingCalculatorOptions\x12&\n\x1b\x63ombine_with_previous_ratio\x18\x01 \x01(\x02:\x01\x30\x32`\n\x03\x65xt\x12\x1c.mediapipe.CalculatorOptions\x18\xe8\x99\xfc\xb3\x01 \x01(\x0b\x32\x31.mediapipe.SegmentationSmoothingCalculatorOptions')
 
-
-
-_SEGMENTATIONSMOOTHINGCALCULATOROPTIONS = DESCRIPTOR.message_types_by_name['SegmentationSmoothingCalculatorOptions']
-SegmentationSmoothingCalculatorOptions = _reflection.GeneratedProtocolMessageType('SegmentationSmoothingCalculatorOptions', (_message.Message,), {
-  'DESCRIPTOR' : _SEGMENTATIONSMOOTHINGCALCULATOROPTIONS,
-  '__module__' : 'mediapipe.calculators.image.segmentation_smoothing_calculator_pb2'
-  # @@protoc_insertion_point(class_scope:mediapipe.SegmentationSmoothingCalculatorOptions)
-  })
-_sym_db.RegisterMessage(SegmentationSmoothingCalculatorOptions)
-
+_globals = globals()
+_builder.BuildMessageAndEnumDescriptors(DESCRIPTOR, _globals)
+_builder.BuildTopDescriptorsAndMessages(DESCRIPTOR, 'mediapipe.calculators.image.segmentation_smoothing_calculator_pb2', _globals)
 if _descriptor._USE_C_DESCRIPTORS == False:
   mediapipe_dot_framework_dot_calculator__options__pb2.CalculatorOptions.RegisterExtension(_SEGMENTATIONSMOOTHINGCALCULATOROPTIONS.extensions_by_name['ext'])
 
   DESCRIPTOR._options = None
-  _SEGMENTATIONSMOOTHINGCALCULATOROPTIONS._serialized_start=121
-  _SEGMENTATIONSMOOTHINGCALCULATOROPTIONS._serialized_end=299
+  _globals['_SEGMENTATIONSMOOTHINGCALCULATOROPTIONS']._serialized_start=121
+  _globals['_SEGMENTATIONSMOOTHINGCALCULATOROPTIONS']._serialized_end=299
 # @@protoc_insertion_point(module_scope)

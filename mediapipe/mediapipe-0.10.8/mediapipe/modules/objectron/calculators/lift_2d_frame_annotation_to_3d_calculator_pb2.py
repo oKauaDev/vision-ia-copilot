@@ -4,9 +4,8 @@
 """Generated protocol buffer code."""
 from google.protobuf import descriptor as _descriptor
 from google.protobuf import descriptor_pool as _descriptor_pool
-from google.protobuf import message as _message
-from google.protobuf import reflection as _reflection
 from google.protobuf import symbol_database as _symbol_database
+from google.protobuf.internal import builder as _builder
 # @@protoc_insertion_point(imports)
 
 _sym_db = _symbol_database.Default()
@@ -22,20 +21,13 @@ from mediapipe.modules.objectron.calculators import belief_decoder_config_pb2 as
 
 DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\nWmediapipe/modules/objectron/calculators/lift_2d_frame_annotation_to_3d_calculator.proto\x12\tmediapipe\x1a$mediapipe/framework/calculator.proto\x1a\x43mediapipe/modules/objectron/calculators/belief_decoder_config.proto\"\xda\x02\n*Lift2DFrameAnnotationTo3DCalculatorOptions\x12\x36\n\x0e\x64\x65\x63oder_config\x18\x01 \x01(\x0b\x32\x1e.mediapipe.BeliefDecoderConfig\x12\x1d\n\x12normalized_focal_x\x18\x02 \x01(\x02:\x01\x31\x12\x1d\n\x12normalized_focal_y\x18\x03 \x01(\x02:\x01\x31\x12\'\n\x1cnormalized_principal_point_x\x18\x04 \x01(\x02:\x01\x30\x12\'\n\x1cnormalized_principal_point_y\x18\x05 \x01(\x02:\x01\x30\x32\x64\n\x03\x65xt\x12\x1c.mediapipe.CalculatorOptions\x18\x8c\xac\xae\x8a\x01 \x01(\x0b\x32\x35.mediapipe.Lift2DFrameAnnotationTo3DCalculatorOptions')
 
-
-
-_LIFT2DFRAMEANNOTATIONTO3DCALCULATOROPTIONS = DESCRIPTOR.message_types_by_name['Lift2DFrameAnnotationTo3DCalculatorOptions']
-Lift2DFrameAnnotationTo3DCalculatorOptions = _reflection.GeneratedProtocolMessageType('Lift2DFrameAnnotationTo3DCalculatorOptions', (_message.Message,), {
-  'DESCRIPTOR' : _LIFT2DFRAMEANNOTATIONTO3DCALCULATOROPTIONS,
-  '__module__' : 'mediapipe.modules.objectron.calculators.lift_2d_frame_annotation_to_3d_calculator_pb2'
-  # @@protoc_insertion_point(class_scope:mediapipe.Lift2DFrameAnnotationTo3DCalculatorOptions)
-  })
-_sym_db.RegisterMessage(Lift2DFrameAnnotationTo3DCalculatorOptions)
-
+_globals = globals()
+_builder.BuildMessageAndEnumDescriptors(DESCRIPTOR, _globals)
+_builder.BuildTopDescriptorsAndMessages(DESCRIPTOR, 'mediapipe.modules.objectron.calculators.lift_2d_frame_annotation_to_3d_calculator_pb2', _globals)
 if _descriptor._USE_C_DESCRIPTORS == False:
   mediapipe_dot_framework_dot_calculator__options__pb2.CalculatorOptions.RegisterExtension(_LIFT2DFRAMEANNOTATIONTO3DCALCULATOROPTIONS.extensions_by_name['ext'])
 
   DESCRIPTOR._options = None
-  _LIFT2DFRAMEANNOTATIONTO3DCALCULATOROPTIONS._serialized_start=210
-  _LIFT2DFRAMEANNOTATIONTO3DCALCULATOROPTIONS._serialized_end=556
+  _globals['_LIFT2DFRAMEANNOTATIONTO3DCALCULATOROPTIONS']._serialized_start=210
+  _globals['_LIFT2DFRAMEANNOTATIONTO3DCALCULATOROPTIONS']._serialized_end=556
 # @@protoc_insertion_point(module_scope)

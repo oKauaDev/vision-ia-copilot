@@ -4,9 +4,8 @@
 """Generated protocol buffer code."""
 from google.protobuf import descriptor as _descriptor
 from google.protobuf import descriptor_pool as _descriptor_pool
-from google.protobuf import message as _message
-from google.protobuf import reflection as _reflection
 from google.protobuf import symbol_database as _symbol_database
+from google.protobuf.internal import builder as _builder
 # @@protoc_insertion_point(imports)
 
 _sym_db = _symbol_database.Default()
@@ -16,16 +15,9 @@ _sym_db = _symbol_database.Default()
 
 DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n@mediapipe/framework/formats/motion/optical_flow_field_data.proto\x12\tmediapipe\"U\n\x14OpticalFlowFieldData\x12\r\n\x05width\x18\x01 \x01(\x05\x12\x0e\n\x06height\x18\x02 \x01(\x05\x12\x0e\n\x02\x64x\x18\x03 \x03(\x02\x42\x02\x10\x01\x12\x0e\n\x02\x64y\x18\x04 \x03(\x02\x42\x02\x10\x01')
 
-
-
-_OPTICALFLOWFIELDDATA = DESCRIPTOR.message_types_by_name['OpticalFlowFieldData']
-OpticalFlowFieldData = _reflection.GeneratedProtocolMessageType('OpticalFlowFieldData', (_message.Message,), {
-  'DESCRIPTOR' : _OPTICALFLOWFIELDDATA,
-  '__module__' : 'mediapipe.framework.formats.motion.optical_flow_field_data_pb2'
-  # @@protoc_insertion_point(class_scope:mediapipe.OpticalFlowFieldData)
-  })
-_sym_db.RegisterMessage(OpticalFlowFieldData)
-
+_globals = globals()
+_builder.BuildMessageAndEnumDescriptors(DESCRIPTOR, _globals)
+_builder.BuildTopDescriptorsAndMessages(DESCRIPTOR, 'mediapipe.framework.formats.motion.optical_flow_field_data_pb2', _globals)
 if _descriptor._USE_C_DESCRIPTORS == False:
 
   DESCRIPTOR._options = None
@@ -33,6 +25,6 @@ if _descriptor._USE_C_DESCRIPTORS == False:
   _OPTICALFLOWFIELDDATA.fields_by_name['dx']._serialized_options = b'\020\001'
   _OPTICALFLOWFIELDDATA.fields_by_name['dy']._options = None
   _OPTICALFLOWFIELDDATA.fields_by_name['dy']._serialized_options = b'\020\001'
-  _OPTICALFLOWFIELDDATA._serialized_start=79
-  _OPTICALFLOWFIELDDATA._serialized_end=164
+  _globals['_OPTICALFLOWFIELDDATA']._serialized_start=79
+  _globals['_OPTICALFLOWFIELDDATA']._serialized_end=164
 # @@protoc_insertion_point(module_scope)

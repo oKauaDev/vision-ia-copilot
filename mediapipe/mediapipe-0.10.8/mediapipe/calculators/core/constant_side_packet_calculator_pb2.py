@@ -4,9 +4,8 @@
 """Generated protocol buffer code."""
 from google.protobuf import descriptor as _descriptor
 from google.protobuf import descriptor_pool as _descriptor_pool
-from google.protobuf import message as _message
-from google.protobuf import reflection as _reflection
 from google.protobuf import symbol_database as _symbol_database
+from google.protobuf.internal import builder as _builder
 # @@protoc_insertion_point(imports)
 
 _sym_db = _symbol_database.Default()
@@ -25,31 +24,15 @@ from mediapipe.framework.formats import time_series_header_pb2 as mediapipe_dot_
 
 DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n@mediapipe/calculators/core/constant_side_packet_calculator.proto\x12\tmediapipe\x1a$mediapipe/framework/calculator.proto\x1a\x30mediapipe/framework/formats/classification.proto\x1a*mediapipe/framework/formats/landmark.proto\x1a-mediapipe/framework/formats/matrix_data.proto\x1a\x34mediapipe/framework/formats/time_series_header.proto\"\x89\x05\n#ConstantSidePacketCalculatorOptions\x12Q\n\x06packet\x18\x01 \x03(\x0b\x32\x41.mediapipe.ConstantSidePacketCalculatorOptions.ConstantSidePacket\x1a\xaf\x03\n\x12\x43onstantSidePacket\x12\x13\n\tint_value\x18\x01 \x01(\x05H\x00\x12\x16\n\x0cuint64_value\x18\x05 \x01(\x04H\x00\x12\x15\n\x0bint64_value\x18\x0b \x01(\x03H\x00\x12\x15\n\x0b\x66loat_value\x18\x02 \x01(\x02H\x00\x12\x16\n\x0c\x64ouble_value\x18\t \x01(\x01H\x00\x12\x14\n\nbool_value\x18\x03 \x01(\x08H\x00\x12\x16\n\x0cstring_value\x18\x04 \x01(\tH\x00\x12\x42\n\x19\x63lassification_list_value\x18\x06 \x01(\x0b\x32\x1d.mediapipe.ClassificationListH\x00\x12\x36\n\x13landmark_list_value\x18\x07 \x01(\x0b\x32\x17.mediapipe.LandmarkListH\x00\x12?\n\x18time_series_header_value\x18\n \x01(\x0b\x32\x1b.mediapipe.TimeSeriesHeaderH\x00\x12\x32\n\x11matrix_data_value\x18\x0c \x01(\x0b\x32\x15.mediapipe.MatrixDataH\x00\x42\x07\n\x05value2]\n\x03\x65xt\x12\x1c.mediapipe.CalculatorOptions\x18\x85\xaa\xee\x8a\x01 \x01(\x0b\x32..mediapipe.ConstantSidePacketCalculatorOptions')
 
-
-
-_CONSTANTSIDEPACKETCALCULATOROPTIONS = DESCRIPTOR.message_types_by_name['ConstantSidePacketCalculatorOptions']
-_CONSTANTSIDEPACKETCALCULATOROPTIONS_CONSTANTSIDEPACKET = _CONSTANTSIDEPACKETCALCULATOROPTIONS.nested_types_by_name['ConstantSidePacket']
-ConstantSidePacketCalculatorOptions = _reflection.GeneratedProtocolMessageType('ConstantSidePacketCalculatorOptions', (_message.Message,), {
-
-  'ConstantSidePacket' : _reflection.GeneratedProtocolMessageType('ConstantSidePacket', (_message.Message,), {
-    'DESCRIPTOR' : _CONSTANTSIDEPACKETCALCULATOROPTIONS_CONSTANTSIDEPACKET,
-    '__module__' : 'mediapipe.calculators.core.constant_side_packet_calculator_pb2'
-    # @@protoc_insertion_point(class_scope:mediapipe.ConstantSidePacketCalculatorOptions.ConstantSidePacket)
-    })
-  ,
-  'DESCRIPTOR' : _CONSTANTSIDEPACKETCALCULATOROPTIONS,
-  '__module__' : 'mediapipe.calculators.core.constant_side_packet_calculator_pb2'
-  # @@protoc_insertion_point(class_scope:mediapipe.ConstantSidePacketCalculatorOptions)
-  })
-_sym_db.RegisterMessage(ConstantSidePacketCalculatorOptions)
-_sym_db.RegisterMessage(ConstantSidePacketCalculatorOptions.ConstantSidePacket)
-
+_globals = globals()
+_builder.BuildMessageAndEnumDescriptors(DESCRIPTOR, _globals)
+_builder.BuildTopDescriptorsAndMessages(DESCRIPTOR, 'mediapipe.calculators.core.constant_side_packet_calculator_pb2', _globals)
 if _descriptor._USE_C_DESCRIPTORS == False:
   mediapipe_dot_framework_dot_calculator__options__pb2.CalculatorOptions.RegisterExtension(_CONSTANTSIDEPACKETCALCULATOROPTIONS.extensions_by_name['ext'])
 
   DESCRIPTOR._options = None
-  _CONSTANTSIDEPACKETCALCULATOROPTIONS._serialized_start=313
-  _CONSTANTSIDEPACKETCALCULATOROPTIONS._serialized_end=962
-  _CONSTANTSIDEPACKETCALCULATOROPTIONS_CONSTANTSIDEPACKET._serialized_start=436
-  _CONSTANTSIDEPACKETCALCULATOROPTIONS_CONSTANTSIDEPACKET._serialized_end=867
+  _globals['_CONSTANTSIDEPACKETCALCULATOROPTIONS']._serialized_start=313
+  _globals['_CONSTANTSIDEPACKETCALCULATOROPTIONS']._serialized_end=962
+  _globals['_CONSTANTSIDEPACKETCALCULATOROPTIONS_CONSTANTSIDEPACKET']._serialized_start=436
+  _globals['_CONSTANTSIDEPACKETCALCULATOROPTIONS_CONSTANTSIDEPACKET']._serialized_end=867
 # @@protoc_insertion_point(module_scope)

@@ -4,9 +4,8 @@
 """Generated protocol buffer code."""
 from google.protobuf import descriptor as _descriptor
 from google.protobuf import descriptor_pool as _descriptor_pool
-from google.protobuf import message as _message
-from google.protobuf import reflection as _reflection
 from google.protobuf import symbol_database as _symbol_database
+from google.protobuf.internal import builder as _builder
 # @@protoc_insertion_point(imports)
 
 _sym_db = _symbol_database.Default()
@@ -21,20 +20,13 @@ except AttributeError:
 
 DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n?mediapipe/calculators/tensor/bert_preprocessor_calculator.proto\x12\tmediapipe\x1a$mediapipe/framework/calculator.proto\"\xbd\x01\n!BertPreprocessorCalculatorOptions\x12\x18\n\x10\x62\x65rt_max_seq_len\x18\x01 \x01(\x05\x12!\n\x19has_dynamic_input_tensors\x18\x02 \x01(\x08\x32[\n\x03\x65xt\x12\x1c.mediapipe.CalculatorOptions\x18\xd7\xa9\xc5\xdc\x01 \x01(\x0b\x32,.mediapipe.BertPreprocessorCalculatorOptions')
 
-
-
-_BERTPREPROCESSORCALCULATOROPTIONS = DESCRIPTOR.message_types_by_name['BertPreprocessorCalculatorOptions']
-BertPreprocessorCalculatorOptions = _reflection.GeneratedProtocolMessageType('BertPreprocessorCalculatorOptions', (_message.Message,), {
-  'DESCRIPTOR' : _BERTPREPROCESSORCALCULATOROPTIONS,
-  '__module__' : 'mediapipe.calculators.tensor.bert_preprocessor_calculator_pb2'
-  # @@protoc_insertion_point(class_scope:mediapipe.BertPreprocessorCalculatorOptions)
-  })
-_sym_db.RegisterMessage(BertPreprocessorCalculatorOptions)
-
+_globals = globals()
+_builder.BuildMessageAndEnumDescriptors(DESCRIPTOR, _globals)
+_builder.BuildTopDescriptorsAndMessages(DESCRIPTOR, 'mediapipe.calculators.tensor.bert_preprocessor_calculator_pb2', _globals)
 if _descriptor._USE_C_DESCRIPTORS == False:
   mediapipe_dot_framework_dot_calculator__options__pb2.CalculatorOptions.RegisterExtension(_BERTPREPROCESSORCALCULATOROPTIONS.extensions_by_name['ext'])
 
   DESCRIPTOR._options = None
-  _BERTPREPROCESSORCALCULATOROPTIONS._serialized_start=117
-  _BERTPREPROCESSORCALCULATOROPTIONS._serialized_end=306
+  _globals['_BERTPREPROCESSORCALCULATOROPTIONS']._serialized_start=117
+  _globals['_BERTPREPROCESSORCALCULATOROPTIONS']._serialized_end=306
 # @@protoc_insertion_point(module_scope)

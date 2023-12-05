@@ -4,9 +4,8 @@
 """Generated protocol buffer code."""
 from google.protobuf import descriptor as _descriptor
 from google.protobuf import descriptor_pool as _descriptor_pool
-from google.protobuf import message as _message
-from google.protobuf import reflection as _reflection
 from google.protobuf import symbol_database as _symbol_database
+from google.protobuf.internal import builder as _builder
 # @@protoc_insertion_point(imports)
 
 _sym_db = _symbol_database.Default()
@@ -21,20 +20,13 @@ except AttributeError:
 
 DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\nPmediapipe/calculators/image/opencv_encoded_image_to_image_frame_calculator.proto\x12\tmediapipe\x1a$mediapipe/framework/calculator.proto\"\xcd\x01\n/OpenCvEncodedImageToImageFrameCalculatorOptions\x12/\n apply_orientation_from_exif_data\x18\x01 \x01(\x08:\x05\x66\x61lse2i\n\x03\x65xt\x12\x1c.mediapipe.CalculatorOptions\x18\x8c\xfa\xd8\x90\x01 \x01(\x0b\x32:.mediapipe.OpenCvEncodedImageToImageFrameCalculatorOptions')
 
-
-
-_OPENCVENCODEDIMAGETOIMAGEFRAMECALCULATOROPTIONS = DESCRIPTOR.message_types_by_name['OpenCvEncodedImageToImageFrameCalculatorOptions']
-OpenCvEncodedImageToImageFrameCalculatorOptions = _reflection.GeneratedProtocolMessageType('OpenCvEncodedImageToImageFrameCalculatorOptions', (_message.Message,), {
-  'DESCRIPTOR' : _OPENCVENCODEDIMAGETOIMAGEFRAMECALCULATOROPTIONS,
-  '__module__' : 'mediapipe.calculators.image.opencv_encoded_image_to_image_frame_calculator_pb2'
-  # @@protoc_insertion_point(class_scope:mediapipe.OpenCvEncodedImageToImageFrameCalculatorOptions)
-  })
-_sym_db.RegisterMessage(OpenCvEncodedImageToImageFrameCalculatorOptions)
-
+_globals = globals()
+_builder.BuildMessageAndEnumDescriptors(DESCRIPTOR, _globals)
+_builder.BuildTopDescriptorsAndMessages(DESCRIPTOR, 'mediapipe.calculators.image.opencv_encoded_image_to_image_frame_calculator_pb2', _globals)
 if _descriptor._USE_C_DESCRIPTORS == False:
   mediapipe_dot_framework_dot_calculator__options__pb2.CalculatorOptions.RegisterExtension(_OPENCVENCODEDIMAGETOIMAGEFRAMECALCULATOROPTIONS.extensions_by_name['ext'])
 
   DESCRIPTOR._options = None
-  _OPENCVENCODEDIMAGETOIMAGEFRAMECALCULATOROPTIONS._serialized_start=134
-  _OPENCVENCODEDIMAGETOIMAGEFRAMECALCULATOROPTIONS._serialized_end=339
+  _globals['_OPENCVENCODEDIMAGETOIMAGEFRAMECALCULATOROPTIONS']._serialized_start=134
+  _globals['_OPENCVENCODEDIMAGETOIMAGEFRAMECALCULATOROPTIONS']._serialized_end=339
 # @@protoc_insertion_point(module_scope)

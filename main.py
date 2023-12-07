@@ -35,7 +35,7 @@ def main(args):
     print("")
 
     print("Carregando modelo...")
-    base_options = mp_solutions.base_options.BaseOptions(model_asset_path=MODEL_PATH)
+    base_options = mp.tasks.BaseOptions(model_asset_path=MODEL_PATH)
     options = mp_solutions.object_detection.ObjectDetectorOptions(
         base_options=base_options,
         score_threshold=args.score_threshold,

@@ -8,7 +8,7 @@ from mediapipe.python import solutions as mp_solutions
 import cv2
 from utils.Cache import Cache
 from utils.Distance import calcDirection, calcPositionX
-from helpers.Voice import Voice
+# from helpers.Voice import Voice
 from helpers.Humanization import humanize
 from helpers.DataInfos import get_object_infos
 from debug.Window import Window
@@ -45,7 +45,7 @@ def main(args):
 
     print("Criando classes")
     cap = cv2.VideoCapture(args.camera)
-    voice = Voice()
+    # voice = Voice()
     cache = Cache()
     window = Window("Vision Copilot")
 
@@ -90,10 +90,10 @@ def main(args):
 
         if objects:
             speaker = humanize(objects)
-            voice.speak(speaker)
+            # voice.speak(speaker)
 
     print("Vision Copilot iniciado")
-    voice.speak("Vision Copilot iniciado.")
+    # voice.speak("Vision Copilot iniciado.")
     while cap.isOpened:
         success, image = cap.read()
         if success:
@@ -116,7 +116,7 @@ def main(args):
 
     cap.release()
     window.destroy()
-    voice.speak("Vision Copilot desligado.")
+    # voice.speak("Vision Copilot desligado.")
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description='Vision Copilot - Sistema de Detecção de Objetos.')

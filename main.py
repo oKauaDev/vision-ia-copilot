@@ -35,7 +35,7 @@ def main(args):
     print("")
 
     print("Carregando modelo...")
-    base_options = mp.tasks.python.BaseOptions(model_asset_path=MODEL_PATH)
+    base_options = mp.python.BaseOptions(model_asset_path=MODEL_PATH)
     options = mp_solutions.object_detection.ObjectDetectorOptions(
         base_options=base_options,
         score_threshold=args.score_threshold,
@@ -116,7 +116,7 @@ def main(args):
 
     cap.release()
     window.destroy()
-    # voice.speak("Vision Copilot desligado.")
+    #voice.speak("Vision Copilot desligado.")
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description='Vision Copilot - Sistema de Detecção de Objetos.')
